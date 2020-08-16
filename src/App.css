@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inconsolata", sans-serif;
+}
+
+nav {
+  border-bottom: 0.5px solid #333333;
+  background-color: #f4b608;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.logo,
+.title-name {
+  font-size: 2rem;
+}
+
+.title-name {
+  color: white;
+  background: none;
+}
+nav button {
+  outline: none;
+  background-color: #f4b608;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+nav svg {
+  background: none;
+}
+
+.search-bar {
+  background-color: rgba(82, 83, 85, 0.5);
+  color: white;
+}
+.search-bar::placeholder {
+  color: white;
+}
+.enter-text {
+  caret-color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-height: 30vh;
+  width: 50vw;
+  margin: 5vh auto;
+  padding: 10px;
+  color: black;
+  border: 1px solid white;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.enter-text input,
+.enter-text textarea {
+  border: none;
+  outline: none;
+}
+
+.enter-text .input-note {
+  margin-top: 3vh;
+  font-size: 18px;
+  color: black;
+}
+
+.enter-text .input-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.enter-text button {
+  color: white;
+  background-color: orangered;
+}
+
+.enter-text .title::placeholder {
+  color: black;
+}
+.textarea::placeholder {
+  color: black;
+}
+.notes-container {
+  margin-top: 5vh;
+  min-height: 50vh;
+}
+
+.note-cards {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 5vh;
+  color: black;
+  border-radius: 15px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.note-cards h3 {
+  font-size: 1.7rem;
+}
+
+.note-cards textarea {
+  font-size: 1.2rem;
+}
+
+.note-cards textarea {
+  min-height: 10vh;
+  outline: none;
+}
+
+.delete-btn {
+  align-self: flex-end;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+  color: black;
+}
+
+.content-container {
+  height: 200%;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  height: 15vh;
+}
+
+.dropdown-item {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: orange;
+}
+
+.main-body {
+  margin-top: 0;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-btns button {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
+}
