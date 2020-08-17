@@ -83,6 +83,7 @@ function Note(props) {
           </button>
 
           <input
+            placeholder="color"
             className="color-picker"
             style={{ height: "4vh", width: "8vh" }}
             type="color"
