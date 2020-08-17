@@ -161,4 +161,25 @@ nav svg {
   nav {
     width: 100%;
   }
+  .color-picker {
+    outline: #333333;
+  }
+  .enter-text {
+    width: 90%;
+  }
+  .form-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+  }
+  .refresh-btn,
+  .modify-layout-btn {
+    display: none;
+  }
+  .notes-container {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+  }
 }

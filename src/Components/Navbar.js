@@ -12,7 +12,7 @@ export default function Navbar() {
   const [layout, setLayout] = useState({
     display: "grid",
     justifyContent: "space-around",
-    gridTemplateColumns: "repeat(3, 400px)",
+    gridTemplateColumns: "repeat(1, 400px)",
   });
 
   const toggleTheme = {
@@ -31,11 +31,11 @@ export default function Navbar() {
   };
 
   const handleLayout = () => {
-    setLayout({ ...layout, gridTemplateColumns: "repeat(1, 400px)" });
+    setLayout({ ...layout, gridTemplateColumns: "repeat(3, 400px)" });
   };
 
   const resetLayout = () => {
-    setLayout({ ...layout, gridTemplateColumns: "repeat(3, 400px)" });
+    setLayout({ ...layout, gridTemplateColumns: "repeat(1, 400px)" });
   };
 
   React.useEffect(() => {
@@ -59,7 +59,7 @@ export default function Navbar() {
         <button style={toggleTheme} onClick={resetLayout} className="refresh-btn">
           <FontAwesomeIcon icon={faRedo} size="2x" />
         </button>
-        <button onClick={handleLayout} style={toggleTheme}>
+        <button onClick={handleLayout} style={toggleTheme} className="modify-layout-btn">
           <FontAwesomeIcon icon={faList} size="2x" />
         </button>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
 
           <Dropdown.Menu style={toggleTheme}>
             <Dropdown.Item onClick={handleClick}>{themeBtnText}</Dropdown.Item>
-            <Dropdown.Item href="./">Settings</Dropdown.Item>
+            {/* <Dropdown.Item href="./">Settings</Dropdown.Item> */}
             <Dropdown.Item href="./">Help</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
