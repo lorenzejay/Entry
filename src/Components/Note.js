@@ -76,6 +76,7 @@ function Note(props) {
         />
         <div style={(buttonStyles, toggleTheme)} className="form-btns">
           <button
+            className="enter-btn"
             style={{ border: "none", outline: "none", height: "4vh", width: "8vh" }}
             onClick={handleClick}
           >

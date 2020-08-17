@@ -153,17 +153,16 @@ nav svg {
   justify-content: flex-end;
 }
 
-.form-btns button {
-  border-radius: 5px;
-}
-
 @media screen and (max-width: 768px) {
   nav {
     width: 100%;
   }
   .color-picker {
-    border: 1px solid red;
+    border: 1px solid #333333;
     height: 5vh;
+  }
+  .enter-btn {
+    margin-right: 8px;
   }
   .enter-text {
     width: 90%;
